@@ -274,6 +274,23 @@ body.dark-mode .left {
   flex-direction: column !important;
 }
 
+/* 🔥 Round Image Above Mobile View Button */
+.small-pic {
+  position: fixed;
+  bottom: 135px;
+  right: 25px;
+  z-index: 9999;
+}
+.small-pic img {
+  width: 65px;  /* 🔼 pehle 55px tha */
+  height: 65px; /* 🔼 pehle 55px tha */
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+
 /* Layout Toggle Button */
 .layout-btn {
   position: fixed;
@@ -364,13 +381,18 @@ body.mobile-layout .right button {
           <option value="nast.html">NAST</option>
           <option value="os.html">OS</option>
           <option value="cona.html">CONA</option>
-          <option value="optional.html">OPTIONAL-</option>
+          <option value="optional.html">OPTIONAL</option>
         </select>
 
         <button type="submit">Login</button>
         <p>Don’t have an account? <a href="#">Sign Up</a></p>
       </form>
     </div>
+  </div>
+
+ <!-- ✅ Small Circle Image -->
+  <div class="small-pic">
+    <img src="image.jpg" alt="Devansh" />
   </div>
 
   <div class="credit">👨‍💻 Developer - Devansh Saxena</div>
@@ -384,7 +406,7 @@ body.mobile-layout .right button {
       const pass = document.getElementById("password").value;
       const subject = document.getElementById("subject").value;
 
-      if (user === "radhekrishna" && pass === "devansh") {
+      if (user === "devanshsaxena" && pass === "partofgod") {
         if (subject === "") {
           alert("⚠️ Please select a subject before logging in.");
           return false;
