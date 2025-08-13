@@ -489,11 +489,16 @@ Defined in Instruction Set Architecture (ISA).
 
 Example:
 
-0001 → ADD
+| **Op Code** | **Mnemonic** | **Operation**                      |
+| ----------- | ------------ | ---------------------------------- |
+| `0001`      | `LOAD`       | Load data from memory to register  |
+| `0010`      | `STORE`      | Store data from register to memory |
+| `0011`      | `ADD`        | Add two values                     |
+| `0100`      | `SUB`        | Subtract two values                |
+| `0101`      | `JMP`        | Jump to another instruction        |
+| `0110`      | `CMP`        | Compare two values                 |
+| `0111`      | `AND`        | Logical AND                        |
 
-0010 → SUB
-
-0011 → MUL
 
 📍 3. Instruction Types
 🔹 Categories:
@@ -1136,5 +1141,6 @@ May suffer from pipeline hazards (structural, data, control).
   </div>
 </body>
 </html>
+
 
 
